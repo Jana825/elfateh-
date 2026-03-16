@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elfateh Drive - Premium Car Seat Covers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <div class="logo-text">
+              <span class="brand-name">ELFATEH DRIVE</span>
+              <span class="brand-tagline">For Car Seats</span>
+            </div>
+          </div>
+
+          <div class="nav-links">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="products">Products</a>
+            <a href="#" class="nav-link" data-page="about">About</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+          </div>
+
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="cart-btn" id="cartBtn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mobile-link" data-page="home">Home</a>
+      <a href="#" class="mobile-link" data-page="products">Products</a>
+      <a href="#" class="mobile-link" data-page="about">About</a>
+      <a href="#" class="mobile-link" data-page="contact">Contact</a>
+    </div>
+
+    <!-- Home Page -->
+    <div class="page active" id="homePage">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">ELFATEH DRIVE</h1>
+            <p class="hero-subtitle">Premium Car Seat Covers</p>
+            <p class="hero-description">
+              Experience luxury and comfort with our handcrafted automotive seat
+              solutions
+            </p>
+            <button class="cta-btn" data-page="products">
+              Shop Now
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="hero-image">
+            <div class="hero-car-icon">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="featured-products">
+        <div class="container">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Discover our premium collection</p>
+          <div class="products-grid" id="featuredProducts">
+            <!-- Products will be loaded here -->
+          </div>
+          <button class="view-all-btn" data-page="products">
+            View All Products
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-choose">
+        <div class="container">
+          <h2 class="section-title">Why Choose Elfateh Drive</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Premium Quality</h3>
+              <p>
+                Handcrafted with finest materials for lasting durability and
+                comfort
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>Custom Designs</h3>
+              <p>
+                Wide range of colors and patterns to match your vehicle's
+                interior
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Easy Installation</h3>
+              <p>Professional installation guides and support included</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Warranty Protection</h3>
+              <p>
+                Comprehensive warranty on all products for your peace of mind
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Products Page -->
+    <div class="page" id="productsPage">
+      <section class="products-section">
+        <div class="container">
+          <h1 class="page-title">Our Products</h1>
+          <p class="page-subtitle">Premium car seat covers for every style</p>
+
+          <!-- Filters -->
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+              All Products
+            </button>
+            <button class="filter-btn" data-filter="leather">Leather</button>
+            <button class="filter-btn" data-filter="fabric">Fabric</button>
+            <button class="filter-btn" data-filter="premium">Premium</button>
+          </div>
+
+          <div class="products-grid" id="allProducts">
+            <!-- Products will be loaded here -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Page -->
+    <div class="page" id="aboutPage">
+      <section class="about-section">
+        <div class="container">
+          <h1 class="page-title">About Elfateh Drive</h1>
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Crafting Excellence Since Day One</h2>
+              <p>
+                At Elfateh Drive, we're passionate about transforming your
+                driving experience. Our premium car seat covers combine luxury,
+                comfort, and durability to create the perfect automotive
+                interior solution.
+              </p>
+              <p>
+                Every product is carefully crafted with attention to detail,
+                ensuring that your vehicle's seats not only look stunning but
+                also provide the comfort you deserve on every journey.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <h3>500+</h3>
+                  <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                  <h3>50+</h3>
+                  <p>Product Designs</p>
+                </div>
+                <div class="stat">
+                  <h3>100%</h3>
+                  <p>Quality Guarantee</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <div class="about-icon">
+                <i class="fas fa-award"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="page" id="contactPage">
+      <section class="contact-section">
+        <div class="container">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-subtitle">We'd love to hear from you</p>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>+20 100 553 0527</p>
+                <a
+                  href="https://wa.me/201005530527"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  Chat Now <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>+20 100 553 0527</p>
+                <a href="tel:+201005530527" class="contact-link">
+                  Call Us <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h3>Working Hours</h3>
+                <p>Mon - Sat: 9AM - 8PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+              <form class="contact-form" id="contactForm">
+                <h2>Send Us a Message</h2>
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="tel" placeholder="Your Phone" required />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                  Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Cart Page -->
+    <div class="page" id="cartPage">
+      <section class="cart-section">
+        <div class="container">
+          <h1 class="page-title">Shopping Cart</h1>
+
+          <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+              <!-- Cart items will be loaded here -->
+            </div>
+
+            <div class="cart-summary">
+              <h2>Order Summary</h2>
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">0 EGP</span>
+              </div>
+              <div class="summary-row">
+                <span>Delivery</span>
+                <span id="delivery">50 EGP</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span id="total">0 EGP</span>
+              </div>
+
+              <div class="payment-methods">
+                <h3>Payment Method</h3>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="instapay" checked />
+                  <div class="payment-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>InstaPay</span>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="vodafone" />
+                  <div class="payment-card">
+                    <i class="fas fa-phone"></i>
+                    <span>Vodafone Cash</span>
+                  </div>
+                </label>
+              </div>
+
+              <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+              <button class="continue-shopping" data-page="products">
+                <i class="fas fa-arrow-left"></i>
+                Continue Shopping
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201005530527" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-shield-alt"></i>
+              <div class="logo-text">
+                <span class="brand-name">ELFATEH DRIVE</span>
+                <span class="brand-tagline">For Car Seats</span>
+              </div>
+            </div>
+            <p>Premium car seat covers for the discerning driver</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#" data-page="home">Home</a>
+            <a href="#" data-page="products">Products</a>
+            <a href="#" data-page="about">About</a>
+            <a href="#" data-page="contact">Contact</a>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fab fa-whatsapp"></i> +20 100 553 0527</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Elfateh Drive. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
